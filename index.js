@@ -89,7 +89,7 @@ db.set(`latestmon_${message.guild.id}`, `${idd}`)
    .setTitle('A wild pokèmon has appeared!')
    .setColor("RANDOM")
    .setDescription('Use .catch <pokémon> to catch it')
-.setImage(`https://play.pokemonshowdown.com/sprites/ani/${name}.gif`)
+.setImage(require(`./png/normal/${idd}.png`))
 message.channel.send(embed)
 db.set(`latestmon_${message.guild.id}`, `${idd}`)
 
